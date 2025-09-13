@@ -1,0 +1,19 @@
+# Pede ao usuário para digitar dois números
+dividendo = float(input("Digite o dividendo (o número a ser dividido): "))
+divisor = float(input("Digite o divisor: "))
+
+# Verifica se o divisor não é zero para evitar erro
+if divisor == 0:
+    print("Erro: Divisão por zero não é permitida.")
+else:
+    # Divisão normal
+    resultado_divisao = dividendo / divisor
+    print(f"\nResultado da divisão: {resultado_divisao}")
+
+    # Divisão de chão (apenas a parte inteira)
+    resultado_inteiro = dividendo // divisor
+    print(f"Parte inteira da divisão: {resultado_inteiro}")
+
+    # Módulo (resto da divisão)
+    resto_divisao = dividendo % divisor
+    print(f"Resto da divisão: {resto_divisao}")
